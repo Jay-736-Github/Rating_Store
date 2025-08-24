@@ -44,28 +44,27 @@ A comprehensive full-stack web application designed as a platform for users to s
 | Security        | JWT for authentication, bcrypt.js    |
 | Validation      | express-validator                     |
 
-## 📂 Project Structure
-
+## 📂 Project Structure.(This might changes based on the requirements)
+```
 Rating_Store/  
-├── server/  
-│   └── src/  
-│       ├── api/           # Main API router configuration  
-│       ├── config/        # Database and environment setup  
-│       ├── controllers/   # Handles request/response logic  
-│       ├── middleware/    # Authentication & role checks  
-│       ├── routes/        # Defines API endpoints  
-│       ├── services/      # Core business logic  
-│       └── ...            # app.js, server.js  
-├── client/  
-│   └── src/  
-│       ├── api/           # Axios instance and API call functions  
-│       ├── components/    # Reusable UI components  
-│       ├── features/      # Major feature components (Auth, Admin, Owner, etc.)  
-│       ├── hooks/         # Custom React hooks (e.g., useAuth)  
-│       ├── lib/           # Utility functions  
-│       ├── pages/         # Top-level page components  
-│       └── router/        # React Router configuration including Protected Routes  
-└── README.md              # Project documentation  
+server/src/
+├── api/                   # Main API router configuration
+├── config/                # Database (Prisma) and environment setup
+├── controllers/           # Handles request/response logic
+├── middleware/            # Authentication & role checks
+├── routes/                # Defines API endpoints for each resource
+├── services/              # Core business logic and database interactions
+└── app.js / server.js     # Entry points
+
+client/src/
+├── api/           # Axios instance and API call functions
+├── components/    # Reusable UI components (Layouts, Skeletons, Shadcn/ui)
+├── features/      # Components for major features (Auth, Admin, Owner, etc.)
+├── hooks/         # Custom React hooks (e.g., useAuth)
+├── lib/           # Utility functions
+├── pages/         # Top-level page components
+└── router/        # React Router configuration including Protected Routes
+```
 
 ## 📋 API Endpoints
 
